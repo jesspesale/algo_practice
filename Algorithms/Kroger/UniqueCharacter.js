@@ -1,7 +1,6 @@
-// A unique character is one that appears only once in a string.
-// Given a string of consisting of lowercase Engilish letters only,
-// return the idnex of the first occurence of a unique character in
-//  the string using -1 based indexing
+// A unique character is one which appears only once in a string. 
+// Given a string consisting of lowercase English letters only, return 
+// the index of the first occurrence of a unique character in the string
 
 
 function getUniqueCharacter(s) {
@@ -16,7 +15,7 @@ function getUniqueCharacter(s) {
   }
 
   for (let val in counter) {
-    if (counter[val] == 1) return s.indexOf(val) + 1;
+    if (counter[val] == 1) return s.indexOf(val)    + 1;
   }
   // loop through the frequecy counter object
   // the first letter with a frequency of 1 return that index
@@ -24,3 +23,5 @@ function getUniqueCharacter(s) {
   return -1;
   // return -1 if no letters had just one
 }
+
+getUniqueCharacter("hello")
