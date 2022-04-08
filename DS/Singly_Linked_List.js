@@ -23,6 +23,7 @@ class SinglyLinkedList {
         this.tail = node;
     }
     this.length++
+    return this
   }
 }
 
