@@ -32,22 +32,25 @@ class SinglyLinkedList {
     let current = this.head;
     let newTail = current;
     while (current.next) {
-        newTail = current;
-        current = current.next;
+      newTail = current;
+      current = current.next;
     }
-    this.tail = newTail
+    this.tail = newTail;
     this.tail.next = null;
     this.length--;
-    return newTail.val;
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
     }
-
+    return newTail.val;
+  }
+  
 }
 
-// let first = new Node("Hi");
-// first.next = new Node("there");
+
 let list = new SinglyLinkedList
 list.push("Hi")
 list.push("there")
 list.push("Jess")
-list.pop()
-console.log(list)
+// list.pop()
+// console.log(list)
