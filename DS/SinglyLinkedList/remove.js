@@ -60,4 +60,5 @@ class SinglyLinkedList {
     this.length--;
     return removed;
   }
+  
 }
