@@ -50,7 +50,6 @@ function same(arr1, arr2) {
       return false;
     }
   }
-
   return true;
 }
 
