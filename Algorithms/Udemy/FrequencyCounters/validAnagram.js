@@ -3,6 +3,8 @@
 // Anagram is a word, phrase, or name formed by rearanging
 // the letters of another, such as cinema formed from iceman
 
+
+// O(N) linear time complexity
 function validAnagram(str1, str2) {
   if (str1.length !== str2.length) return false;
 
